@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #E7E7E7;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+         to right top,
+         rgba(5,25,55,0.9),
+         rgba(0,77,122,0.9),
+         rgba(0,135,147, 0.9),
+         rgba(168,235,18,0.9)
+    ),
+    url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto-compress&cs-tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+     
+}
+
+h1{
+    font-size: 6.2rem;
+    font-weight: bold;
+    color: var(--color);
+    margin: 4.8rem 0;
+}
+.heading{
+    text-align: center;
+}
+p{
+    color: rgb(0, 0, 0.8);
+    font-size: 1.9rem;
+}
+section{
+    width: 70rem;
+    height: 50rem;
+}
+.main-textarea{
+    width: 100%;
+}
+.text-area{
+    width: 100%;
+    height: 300px;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+}
+.text-area:focus-visible{
+    outline: none ;
+}
+.main-Content{
+    background-color: rgb(204, 198, 198);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+.main-Content .box{
+    flex: 1;
+    flex-basis: 25rem;
+    text-align: center;
+    padding: 20px ;
+    
+}
+
+.main-Content div:nth-child(odd){
+    border-right: 1px solid white;
+}
+.main-Content div:nth-child(1), 
+.main-Content div:nth-child(2){
+    border-bottom: 1px solid white;
+}
+div p:first-child{
+    font-weight: bold;
+      
+}
+
+.main-Content div .change-color{
+    color: red;
+}
